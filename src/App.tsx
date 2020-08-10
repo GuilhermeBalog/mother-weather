@@ -1,24 +1,32 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect, useState } from 'react'
+import Icon, { IconName } from './Icon'
+import './App.css'
 
-function App() {
+import api from './services/WeatherAPI'
+
+
+const App: React.FC = () => {
+  const [weatherIcon, setWeatherIcon] = useState<IconName>('clearsky_day')
+
+  useEffect(() => {
+    fetchData()
+    
+    async function fetchData(){
+      // 16.407215, 106.528151
+      const lat = 16.407215
+      const lon = 106.528151
+      const response = await api.get('/complete', {
+        params: { lat, lon }
+      })
+      
+      setWeatherIcon(response.data.properties.timeseries[0].data.next_1_hours.summary.symbol_code)
+    }
+  }, [])
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Icon name={weatherIcon} />
+      <h1>Filho, leva um casaco</h1>
     </div>
   );
 }
