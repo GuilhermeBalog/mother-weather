@@ -7,3 +7,7 @@
     justify-content: center;
     align-items: center;
 }
+
+.App .icon{
+    margin-bottom: 15px;
+}

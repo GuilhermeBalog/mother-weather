@@ -4,24 +4,39 @@ import './App.css'
 
 import api from './services/WeatherAPI'
 
-
 const App: React.FC = () => {
   const [weatherIcon, setWeatherIcon] = useState<IconName>('clearsky_day')
+  const [latitude, setLatitude] = useState(0)
+  const [longitude, setLongitude] = useState(0)
+
+  useEffect(() => {
+    navigator.geolocation.getCurrentPosition(
+      position => {
+        const { latitude, longitude } = position.coords
+
+        setLatitude(latitude)
+        setLongitude(longitude)
+      },
+      error => {
+        console.log(error)
+      },
+      {
+        timeout: 3000
+      }
+    )
+  }, [])
 
   useEffect(() => {
     fetchData()
     
     async function fetchData(){
-      // 16.407215, 106.528151
-      const lat = 16.407215
-      const lon = 106.528151
       const response = await api.get('/complete', {
-        params: { lat, lon }
+        params: { lat: latitude, lon: longitude }
       })
       
       setWeatherIcon(response.data.properties.timeseries[0].data.next_1_hours.summary.symbol_code)
     }
-  }, [])
+  }, [latitude, longitude])
 
   return (
     <div className="App">
