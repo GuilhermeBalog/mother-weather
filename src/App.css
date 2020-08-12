@@ -8,6 +8,38 @@
     align-items: center;
 }
 
-.App .icon{
-    margin-bottom: 15px;
+h1{
+    font-size: 2.441em;
+    text-align: center;
+    margin: 0 15px 15px 15px;
+}
+
+.quote{
+    margin: 15px;
+}
+
+.quote q{
+    font-weight: 400;
+    font-size: 1.25em;
+    font-style: italic;
+}
+
+.quote p{
+    text-align: right;
+    margin-top: 5px;
+}
+
+ul{
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+li{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+    margin: 5px;
+    border: 1px solid #ffffff31;
 }

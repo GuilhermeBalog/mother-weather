@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from 'react'
-import Icon, { IconName } from './Icon'
+import Icon, { IconName } from './components/Icon'
 import './App.css'
 
 import api from './services/WeatherAPI'
+import getMotherSentenceFromWeather from './utils/getMotherSentenceFromWeather'
+import IconList from './components/IconList'
 
 const App: React.FC = () => {
   const [weatherIcon, setWeatherIcon] = useState<IconName>('clearsky_day')
@@ -40,8 +42,12 @@ const App: React.FC = () => {
 
   return (
     <div className="App">
+      <h1>Mother Weather</h1>
       <Icon name={weatherIcon} />
-      <h1>Filho, leva um casaco</h1>
+      <div className="quote">
+        <q>{getMotherSentenceFromWeather(weatherIcon)}</q>
+        <p>- Mãe, {new Date().getFullYear()}</p>
+      </div>
     </div>
   );
 }
