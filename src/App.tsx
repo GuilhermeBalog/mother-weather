@@ -10,6 +10,7 @@ const App: React.FC = () => {
   const [weatherIcon, setWeatherIcon] = useState<IconName>('clearsky_day')
   const [latitude, setLatitude] = useState(0)
   const [longitude, setLongitude] = useState(0)
+  const [shouldShowModal, setShouldShowModal] = useState(false)
 
   useEffect(() => {
     navigator.geolocation.getCurrentPosition(
@@ -42,12 +43,35 @@ const App: React.FC = () => {
 
   return (
     <div className="App">
+      {shouldShowModal &&
+        <div className="modal"> 
+          <div className="modal-content">
+            <header>
+              <h2>Climas e frases</h2>
+              <button className="close-btn" onClick={() => setShouldShowModal(false)}>&times;</button>
+            </header>
+            <IconList />
+          </div>
+        </div>
+      }
+
       <h1>Mother Weather</h1>
       <Icon name={weatherIcon} />
+
       <div className="quote">
         <q>{getMotherSentenceFromWeather(weatherIcon)}</q>
-        <p>- Mãe, {new Date().getFullYear()}</p>
+        <p> - Mãe, {new Date().getFullYear()}</p>
       </div>
+
+      <footer>
+        <p>
+          Feito com <span className="heart">&hearts;</span> por
+          <a href="https://guilhermebalog.github.io"> Guilherme Balog</a>
+        </p> 
+        <p>
+          <button type="button" onClick={() => setShouldShowModal(true)}>Ver todas os climas e frases disponíveis</button>
+        </p>
+      </footer>
     </div>
   );
 }

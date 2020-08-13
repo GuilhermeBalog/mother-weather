@@ -1,21 +1,68 @@
 .App{
     min-height: 100%;
     color: #ffffff;
-    background-color: #2196f3;
+    background-color: #1975d2;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-h1{
+.modal::before{
+    display: block;
+}
+
+.modal{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    background-color: #00000080;
+    z-index: 3;
+}
+
+.modal-content{
+    background-color: #1975d2;
+    width: 90%;
+    margin: 15px auto;
+    position: relative;
+    padding: 15px;
+}
+
+.modal-content header{
+    background-color: #1975d2;
+    display: flex;
+    position: sticky;
+    top: 0;
+}
+
+.modal-content header h2{
+    flex-grow: 1;
+    text-align: center;
     font-size: 2.441em;
+    margin-bottom: 15px;
+}
+
+.modal-content .close-btn{
+    font-size: 1.25em;
+    background: none;
+    border: none;
+    color: inherit;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+h1{
+    font-size: 3.052em;
     text-align: center;
     margin: 0 15px 15px 15px;
 }
 
 .quote{
     margin: 15px;
+    font-size: 1.25em;
 }
 
 .quote q{
@@ -29,17 +76,37 @@ h1{
     margin-top: 5px;
 }
 
-ul{
-    list-style-type: none;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+footer{
+    width: 100%;
+    padding: 15px;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
-li{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 5px;
-    margin: 5px;
-    border: 1px solid #ffffff31;
+footer p{
+    text-align: center;
+    margin: 0 5px;
+}
+
+footer .bullet{
+    background-color: yellowgreen;
+    flex: 1;
+}
+
+footer a{
+    font-weight: 700;
+    text-decoration: none;
+    color: inherit
+}
+
+footer button{
+    background: none;
+    border: none;
+    font-size: inherit;
+    font-weight: 700;
+    color: inherit;
+    cursor: pointer;
 }
