@@ -2,6 +2,10 @@
 
 ⛅ Previsão do tempo de uma maneira divertida, do jeito que só uma mãe sabe fazer
 
+<p style="text-align: center">
+  <img src="./screenshot.png">
+</p>
+
 > This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
