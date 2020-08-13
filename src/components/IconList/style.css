@@ -1,8 +1,5 @@
 ul{
     list-style-type: none;
-    /* display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 5px; */
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -16,6 +13,12 @@ li{
     padding: 5px;
     margin: 15px;
     border: 1px solid #ffffff31;
+    cursor: pointer;
+    transition: background 0.5s;
+}
+
+li:hover{
+    background-color: #ffffff31;
 }
 
 li p, li q{

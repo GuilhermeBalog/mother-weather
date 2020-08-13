@@ -46,7 +46,6 @@ export default function getMotherSentenceFromWeather(weather: IconName){
         case "snowshowersandthunder_day":
         case "snowshowersandthunder_night":
         case "snowshowersandthunder_polartwilight":
-
             return "Filho, fica em casa, tá trovejando"
 
         case "heavysleetandthunder":

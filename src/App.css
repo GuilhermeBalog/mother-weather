@@ -34,13 +34,17 @@
 .modal-content header{
     background-color: #1975d2;
     display: flex;
+    align-items: center;
     position: sticky;
     top: 0;
 }
 
-.modal-content header h2{
+.modal-content .title-group{
     flex-grow: 1;
     text-align: center;
+}
+
+.modal-content .title-group h2{
     font-size: 2.441em;
     margin-bottom: 15px;
 }

@@ -47,10 +47,32 @@ const App: React.FC = () => {
         <div className="modal"> 
           <div className="modal-content">
             <header>
-              <h2>Climas e frases</h2>
+              <div className="title-group">
+                <h2>Frases</h2>
+                <p>Clique em um clima para mostrar a frase</p>
+              </div>
               <button className="close-btn" onClick={() => setShouldShowModal(false)}>&times;</button>
             </header>
-            <IconList />
+            <IconList 
+              iconsToShow={['heavyrain', 'clearsky_day', 'heavyrainandthunder', 'heavysleet', 'heavysnow', 'clearsky_night', 'cloudy', 'fog']}
+              onIconClick={(icon) => {
+                setWeatherIcon(icon)
+                setShouldShowModal(false) 
+              }}
+            />
+            <header>
+              <div className="title-group">
+                <h2>Cilmas</h2>
+                <p>Clique em um clima para mostrar a frase</p>
+              </div>
+              <button className="close-btn" onClick={() => setShouldShowModal(false)}>&times;</button>
+            </header>
+            <IconList 
+              onIconClick={(icon) => {
+                setWeatherIcon(icon)
+                setShouldShowModal(false) 
+              }} 
+            />
           </div>
         </div>
       }

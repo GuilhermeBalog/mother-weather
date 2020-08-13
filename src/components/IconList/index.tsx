@@ -5,21 +5,25 @@ import getMotherSentenceFromWeather from '../../utils/getMotherSentenceFromWeath
 
 import './style.css'
 
-const IconList: React.FC = () => {
+interface Props{
+  iconsToShow ?: IconName[]
+  onIconClick(fn: IconName): void
+}
+
+const IconList: React.FC<Props> = ({ iconsToShow, onIconClick }) => {
   return (
-    <ul>
-      {
-        Object.keys(icons)
-          .map(key => key as IconName)
-          .map(icon => (
-            <li className={getMotherSentenceFromWeather(icon)}>
-              <Icon name={icon} />
-              <p><strong>{icon.replace('_', ' ')}</strong></p>
-              <q>{getMotherSentenceFromWeather(icon)}</q>
-            </li>
-          )) 
-      }
-    </ul>
+      <ul>
+        {
+          (iconsToShow || Object.keys(icons).map(key => key as IconName))
+            .map(icon => (
+              <li onClick={() => { onIconClick(icon) }} key={icon}>
+                <Icon name={icon} />
+                <p><strong>{icon.replace('_', ' ')}</strong></p>
+                <q>{getMotherSentenceFromWeather(icon)}</q>
+              </li>
+            ))
+        }
+      </ul>
   )
 }
 
