@@ -16,6 +16,7 @@
     "react-scripts": "3.4.1",
     "typescript": "~3.7.2"
   },
+  "description": "⛅ Previsão do tempo de uma maneira divertida, do jeito que só uma mãe sabe fazer",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
