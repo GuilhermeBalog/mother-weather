@@ -62,7 +62,7 @@ const App: React.FC = () => {
             />
             <header>
               <div className="title-group">
-                <h2>Cilmas</h2>
+                <h2>Climas</h2>
                 <p>Clique em um clima para mostrar a frase</p>
               </div>
               <button className="close-btn" onClick={() => setShouldShowModal(false)}>&times;</button>
