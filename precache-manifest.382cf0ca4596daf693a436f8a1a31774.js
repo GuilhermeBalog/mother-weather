@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "93062952b01c3e069349846705276ceb",
+    "revision": "4f6e83488080424c1942b0c5306947bd",
     "url": "/mother-weather/index.html"
   },
   {
-    "revision": "683770e71d42eac04e84",
+    "revision": "6e35def76c89f265e514",
     "url": "/mother-weather/static/css/main.2a55568e.chunk.css"
   },
   {
-    "revision": "b8bf7efcc8c1ae5cb377",
-    "url": "/mother-weather/static/js/2.c9472794.chunk.js"
+    "revision": "1958337c000259a616f1",
+    "url": "/mother-weather/static/js/2.70a0167a.chunk.js"
   },
   {
     "revision": "e88a3e95b5364d46e95b35ae8c0dc27d",
-    "url": "/mother-weather/static/js/2.c9472794.chunk.js.LICENSE.txt"
+    "url": "/mother-weather/static/js/2.70a0167a.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "683770e71d42eac04e84",
-    "url": "/mother-weather/static/js/main.294a6467.chunk.js"
+    "revision": "6e35def76c89f265e514",
+    "url": "/mother-weather/static/js/main.82011de4.chunk.js"
   },
   {
-    "revision": "1e0ab1afd5eda2f7acf1",
-    "url": "/mother-weather/static/js/runtime-main.f008a83d.js"
+    "revision": "1c4d25214b00910bc316",
+    "url": "/mother-weather/static/js/runtime-main.3e0375e6.js"
   },
   {
     "revision": "ec0eb0fa979d38de4bada934df8c7aa8",

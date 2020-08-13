@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/mother-weather/static/css/main.2a55568e.chunk.css",
-    "main.js": "/mother-weather/static/js/main.294a6467.chunk.js",
-    "main.js.map": "/mother-weather/static/js/main.294a6467.chunk.js.map",
-    "runtime-main.js": "/mother-weather/static/js/runtime-main.f008a83d.js",
-    "runtime-main.js.map": "/mother-weather/static/js/runtime-main.f008a83d.js.map",
-    "static/js/2.c9472794.chunk.js": "/mother-weather/static/js/2.c9472794.chunk.js",
-    "static/js/2.c9472794.chunk.js.map": "/mother-weather/static/js/2.c9472794.chunk.js.map",
+    "main.js": "/mother-weather/static/js/main.82011de4.chunk.js",
+    "main.js.map": "/mother-weather/static/js/main.82011de4.chunk.js.map",
+    "runtime-main.js": "/mother-weather/static/js/runtime-main.3e0375e6.js",
+    "runtime-main.js.map": "/mother-weather/static/js/runtime-main.3e0375e6.js.map",
+    "static/js/2.70a0167a.chunk.js": "/mother-weather/static/js/2.70a0167a.chunk.js",
+    "static/js/2.70a0167a.chunk.js.map": "/mother-weather/static/js/2.70a0167a.chunk.js.map",
     "index.html": "/mother-weather/index.html",
-    "precache-manifest.21c8eec58917368dbf386620ac79c89c.js": "/mother-weather/precache-manifest.21c8eec58917368dbf386620ac79c89c.js",
+    "precache-manifest.382cf0ca4596daf693a436f8a1a31774.js": "/mother-weather/precache-manifest.382cf0ca4596daf693a436f8a1a31774.js",
     "service-worker.js": "/mother-weather/service-worker.js",
     "static/css/main.2a55568e.chunk.css.map": "/mother-weather/static/css/main.2a55568e.chunk.css.map",
-    "static/js/2.c9472794.chunk.js.LICENSE.txt": "/mother-weather/static/js/2.c9472794.chunk.js.LICENSE.txt",
+    "static/js/2.70a0167a.chunk.js.LICENSE.txt": "/mother-weather/static/js/2.70a0167a.chunk.js.LICENSE.txt",
     "static/media/clearsky_day.svg": "/mother-weather/static/media/clearsky_day.ec0eb0fa.svg",
     "static/media/clearsky_night.svg": "/mother-weather/static/media/clearsky_night.20c8c1bf.svg",
     "static/media/clearsky_polartwilight.svg": "/mother-weather/static/media/clearsky_polartwilight.d30f2093.svg",
@@ -97,9 +97,9 @@
     "static/media/snowshowersandthunder_polartwilight.svg": "/mother-weather/static/media/snowshowersandthunder_polartwilight.e170a9f8.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.f008a83d.js",
-    "static/js/2.c9472794.chunk.js",
+    "static/js/runtime-main.3e0375e6.js",
+    "static/js/2.70a0167a.chunk.js",
     "static/css/main.2a55568e.chunk.css",
-    "static/js/main.294a6467.chunk.js"
+    "static/js/main.82011de4.chunk.js"
   ]
 }
