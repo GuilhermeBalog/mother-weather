@@ -1,22 +1,22 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "6f60155e8d9bf5cff448e0b6673dfce3",
+    "revision": "3554e5fbfbe56a7aa9e9808db016c984",
     "url": "/mother-weather/index.html"
   },
   {
-    "revision": "d42e58a0502aaa5b6732",
-    "url": "/mother-weather/static/css/main.2a55568e.chunk.css"
+    "revision": "31b3d33d05a693e47f51",
+    "url": "/mother-weather/static/css/main.ab0595b1.chunk.css"
   },
   {
-    "revision": "1958337c000259a616f1",
-    "url": "/mother-weather/static/js/2.70a0167a.chunk.js"
+    "revision": "39f1b971c073404335cf",
+    "url": "/mother-weather/static/js/2.1cb7db30.chunk.js"
   },
   {
-    "revision": "e88a3e95b5364d46e95b35ae8c0dc27d",
-    "url": "/mother-weather/static/js/2.70a0167a.chunk.js.LICENSE.txt"
+    "revision": "570d362d673dab785e62d2b8563e1118",
+    "url": "/mother-weather/static/js/2.1cb7db30.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "d42e58a0502aaa5b6732",
+    "revision": "31b3d33d05a693e47f51",
     "url": "/mother-weather/static/js/main.f8d1454f.chunk.js"
   },
   {
