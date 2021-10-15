@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/mother-weather/static/css/main.ab0595b1.chunk.css",
+    "main.css": "/mother-weather/static/css/main.2a55568e.chunk.css",
     "main.js": "/mother-weather/static/js/main.f8d1454f.chunk.js",
     "main.js.map": "/mother-weather/static/js/main.f8d1454f.chunk.js.map",
     "runtime-main.js": "/mother-weather/static/js/runtime-main.3e0375e6.js",
@@ -8,9 +8,9 @@
     "static/js/2.1cb7db30.chunk.js": "/mother-weather/static/js/2.1cb7db30.chunk.js",
     "static/js/2.1cb7db30.chunk.js.map": "/mother-weather/static/js/2.1cb7db30.chunk.js.map",
     "index.html": "/mother-weather/index.html",
-    "precache-manifest.1bdd642ac2bab9955c2de2fbbdc0e95a.js": "/mother-weather/precache-manifest.1bdd642ac2bab9955c2de2fbbdc0e95a.js",
+    "precache-manifest.6045e7b5c7a284a6bebb972e54eb50dc.js": "/mother-weather/precache-manifest.6045e7b5c7a284a6bebb972e54eb50dc.js",
     "service-worker.js": "/mother-weather/service-worker.js",
-    "static/css/main.ab0595b1.chunk.css.map": "/mother-weather/static/css/main.ab0595b1.chunk.css.map",
+    "static/css/main.2a55568e.chunk.css.map": "/mother-weather/static/css/main.2a55568e.chunk.css.map",
     "static/js/2.1cb7db30.chunk.js.LICENSE.txt": "/mother-weather/static/js/2.1cb7db30.chunk.js.LICENSE.txt",
     "static/media/clearsky_day.svg": "/mother-weather/static/media/clearsky_day.ec0eb0fa.svg",
     "static/media/clearsky_night.svg": "/mother-weather/static/media/clearsky_night.20c8c1bf.svg",
@@ -99,7 +99,7 @@
   "entrypoints": [
     "static/js/runtime-main.3e0375e6.js",
     "static/js/2.1cb7db30.chunk.js",
-    "static/css/main.ab0595b1.chunk.css",
+    "static/css/main.2a55568e.chunk.css",
     "static/js/main.f8d1454f.chunk.js"
   ]
 }
